@@ -8,10 +8,9 @@ public class Cliente {
     public Cliente() {}
 
     public String toString() {
-     String string;
-     string = "ID = " + this.clienteId + "Nome = " + this.nome + "Endereco = " + this.endereco;
-    	
-        return string;
+    	String string;
+    	string = "ID = " + this.clienteId + "Nome = " + this.nome + "Endereco = " + this.endereco;
+    	return string;
     }
 
     public int getClienteId() {
