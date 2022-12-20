@@ -10,7 +10,7 @@ public class Main {
 		List<Cliente> todosClientes = new ArrayList<Cliente>();
 		List<Endereco> todosEnderecos = new ArrayList<Endereco>();
 		Scanner teclado = new Scanner(System.in);
-		int opcao = 0, cont=1, cont2=1;
+		int opcao = 0, cont=0, cont2=1;
 		int id, num, atual;
 		String nome, rua, cep, cidade, estado;
 
@@ -42,12 +42,24 @@ public class Main {
 
 				Endereco endereco = new Endereco(cont, rua, num, cep, cidade, estado);
 				Cliente cliente = new Cliente(cont, nome, endereco);
-				todosEnderecos.add(endereco);
-				todosClientes.add(cliente);
+				todosEnderecos.add(cont, endereco);
+				todosClientes.add(cont, cliente);
 				cont++;
-				
 			}
-			
+			if (opcao==2) {
+				System.out.println("ID do Cliente: ");
+				id = teclado.nextInt();
+				Cliente cliente = todosClientes.get(id);
+				System.out.println("ID do Endereco");
+				id = teclado.nextInt();
+				Endereco endereco = todosEnderecos.get(id);
+				System.out.println("Insira um ID para Unidade Consumidora: ");
+				id = teclado.nextInt();
+				System.out.println("Leitura Atual");
+				atual = teclado.nextInt();
+				UC uc = new UC(cont2, atual, cliente, endereco);
+				cont2++;
+			}
 
 			System.out.println("\t[1] Cadastrar Cliente\n");
 			System.out.println("\t[2] Cadastrar Unidade Consumidora\n");
