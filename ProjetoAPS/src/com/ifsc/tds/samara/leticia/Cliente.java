@@ -5,7 +5,11 @@ public class Cliente {
     private String nome;
     private Endereco endereco;
 
-    public Cliente() {}
+    public Cliente(int id, String n, Endereco e) {
+        setClienteId(id);
+        setNome(n);
+        setEndereco(e);
+    }
 
     public String toString() {
     	String string;

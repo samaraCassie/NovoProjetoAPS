@@ -7,7 +7,12 @@ public class UC {
 	private Cliente cliente;
 	private Endereco endereco;
 	
-	public UC() {}
+	public UC(int id, int atual, Cliente cliente, Endereco endereco) {
+		setUcId(id);
+		setLeituraAtual(atual);
+		setCliente(cliente);
+		setEndereco(endereco);
+	}
 	
 	public String toString() {
 		String string;

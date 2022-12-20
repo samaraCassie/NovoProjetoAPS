@@ -14,7 +14,7 @@ public class Fatura {
 		return 0;
 	}
 
-	public void imprimirFatura(vetor) {
+	public void imprimirFatura(Fatura vetor[]) {
 	}
 	
 	public String toString() {
