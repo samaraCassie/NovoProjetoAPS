@@ -10,7 +10,7 @@ public class Main {
 		List<Cliente> todosClientes = new ArrayList<Cliente>();
 		List<Endereco> todosEnderecos = new ArrayList<Endereco>();
 		Scanner teclado = new Scanner(System.in);
-		int opcao = 0, cont=0, cont2=1;
+		int opcao = 0, cont=0, cont2=0;
 		int id, num, atual;
 		String nome, rua, cep, cidade, estado;
 
@@ -59,6 +59,14 @@ public class Main {
 				atual = teclado.nextInt();
 				UC uc = new UC(cont2, atual, cliente, endereco);
 				cont2++;
+			}
+			if (opcao==3) {
+				try {
+					System.out.println("[1] Informar a leitura atual");
+				    uc.getLeituraAtual();
+				} catch (Exception e) {
+					System.out.println("Verifique se Unidade Cosumidora foi inserida.");
+				}
 			}
 
 			System.out.println("\t[1] Cadastrar Cliente\n");
