@@ -68,6 +68,13 @@ public class Main {
 					System.out.println("Verifique se Unidade Cosumidora foi inserida.");
 				}
 			}
+			if (opcao==4){
+				try {
+					uc.faturar();
+				} catch (Exception e) {
+					System.out.println("Verifique se Unidade Cosumidora foi inserida.");
+				}
+			}
 
 			System.out.println("\t[1] Cadastrar Cliente\n");
 			System.out.println("\t[2] Cadastrar Unidade Consumidora\n");
