@@ -75,6 +75,18 @@ public class Main {
 					System.out.println("Verifique se Unidade Cosumidora foi inserida.");
 				}
 			}
+			if (opcao==5) {
+				System.out.println("[1] Todos os Clientes");
+				System.out.println("[2] Faturas Pendentes");
+				System.out.println("[3] Faturas de um cliente especifico (cpf/cnpj)");
+				System.out.println("[4] Todas as Faturad de Um Mês Especifico");
+				System.out.println("[0] Voltar");
+				if (opcao==1) {
+					for (int i = 0; i < todosClientes.size(); i++) {
+						cliente.toString();
+						System.out.println("\n\n");
+					}
+				}
 
 			System.out.println("\t[1] Cadastrar Cliente\n");
 			System.out.println("\t[2] Cadastrar Unidade Consumidora\n");
