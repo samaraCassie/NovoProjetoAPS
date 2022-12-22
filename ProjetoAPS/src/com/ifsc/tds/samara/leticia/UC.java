@@ -13,7 +13,7 @@ public class UC {
 		setCliente(cliente);
 		setEndereco(endereco);
 	}
-	
+
 	public String toString() {
 		String string;
     	string = "ID = " + this.ucId + "\nLeitura Anterior = " + this.leituraAnterior + "\nLeitura Atual = " + this.leituraAtual + "\nCliente = " + this.cliente + "\nEndereco = " + this.endereco;
